@@ -1,0 +1,74 @@
+.contacts_page{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  .contacts_wrapper{
+    position: relative;
+    .urls{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 20px;
+      justify-content: space-between;
+      border-radius: 5px;
+      width: 500px;
+      height: 300px;
+      backdrop-filter: blur(3px);
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgb(161, 192, 202,0.5));
+      a{
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover{
+          transition: 0.2s;
+          transform: scale(1.1);
+        }
+      }
+    }
+    .send_message_wrapper{
+      position: absolute;
+      top: -20px;
+      left: 40px;
+      display: flex;
+      border-radius: 5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      h2{
+        padding: 20px;
+        padding-top: 100px;
+        background-color: rgba(153, 203, 236, 0.301);
+      }
+      .input_wrapper{
+        position: relative;
+        width: 90%;
+        margin: 10px 0px;
+       input{
+        padding: 10px;
+        width: 100%;
+        background:none;
+        outline: none;
+        border-width: 0px;
+        border-bottom: 1px solid;
+       }
+       img{
+        top: 5px;
+        right: 5px;
+        position: absolute;
+       }
+      }
+      textarea{
+        margin: 10px 0px;
+        width: 300px;
+        height: 100px;
+        padding: 10px;
+        background:none;
+        border-width: 0px;
+        border-bottom: 1px solid;
+        resize: none;
+      }
+    }
+  }
+}
